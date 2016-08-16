@@ -127,7 +127,7 @@ ModelImporter:
     4300006: Body1
     4300008: Reload
     4300010: JetPack:JetPack:JetPack
-    7400000: Take 001
+    7400000: sword_moveback_r
     9500000: //RootNode
     13700000: ManBody
   materials:
@@ -150,7 +150,141 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: sword_moveback_r
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 25
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Base_Con
+        weight: 1
+      - path: Base_Con/MovePos
+        weight: 1
+      - path: Base_Con/Root_Con
+        weight: 1
+      - path: Base_Con/Root_Con/Feet_Con_L
+        weight: 1
+      - path: Base_Con/Root_Con/Feet_Con_L/ikHandle1
+        weight: 1
+      - path: Base_Con/Root_Con/Feet_Con_R
+        weight: 1
+      - path: Base_Con/Root_Con/Feet_Con_R/ikHandle2
+        weight: 1
+      - path: Base_Con/Root_Con/wist_Con
+        weight: 1
+      - path: Base_Con/Root_Con/wist_Con/Chest_Con
+        weight: 1
+      - path: Base_Con/Root_Con/wist_Con/Chest_Con/JetPack:JetPack:JetPack
+        weight: 1
+      - path: Base_Con/Root_Con/wist_Con/Chest_Con/Neck_Con
+        weight: 1
+      - path: Base_Con/Root_Con/wist_Con/Chest_Con/Neck_Con/Head_Con
+        weight: 1
+      - path: Base_Con/Root_Con/wist_Con/Chest_Con/Shoulder_Con_L
+        weight: 1
+      - path: Base_Con/Root_Con/wist_Con/Chest_Con/Shoulder_Con_L/Upper_Arm_Con_L
+        weight: 1
+      - path: Base_Con/Root_Con/wist_Con/Chest_Con/Shoulder_Con_L/Upper_Arm_Con_L/Lower_Arm_Con_L
+        weight: 1
+      - path: Base_Con/Root_Con/wist_Con/Chest_Con/Shoulder_Con_L/Upper_Arm_Con_L/Lower_Arm_Con_L/Hand_Con_L
+        weight: 1
+      - path: Base_Con/Root_Con/wist_Con/Chest_Con/Shoulder_Con_L/Upper_Arm_Con_L/Lower_Arm_Con_L/Hand_Con_L/Hand_IK_Con_L
+        weight: 1
+      - path: Base_Con/Root_Con/wist_Con/Chest_Con/Shoulder_Con_L/Upper_Arm_Con_L/Lower_Arm_Con_L/Hand_Con_L/Hand_IK_Con_L/ikHandle4
+        weight: 1
+      - path: Base_Con/Root_Con/wist_Con/Chest_Con/Shoulder_Con_R
+        weight: 1
+      - path: Base_Con/Root_Con/wist_Con/Chest_Con/Shoulder_Con_R/Upper_Arm_Con_R
+        weight: 1
+      - path: Base_Con/Root_Con/wist_Con/Chest_Con/Shoulder_Con_R/Upper_Arm_Con_R/Lower_Arm_Con_R
+        weight: 1
+      - path: Base_Con/Root_Con/wist_Con/Chest_Con/Shoulder_Con_R/Upper_Arm_Con_R/Lower_Arm_Con_R/Hand_Con_R
+        weight: 1
+      - path: Base_Con/Root_Con/wist_Con/Chest_Con/Shoulder_Con_R/Upper_Arm_Con_R/Lower_Arm_Con_R/Hand_Con_R/group1
+        weight: 1
+      - path: Base_Con/Root_Con/wist_Con/Chest_Con/Shoulder_Con_R/Upper_Arm_Con_R/Lower_Arm_Con_R/Hand_Con_R/Hand_IK_Con_R
+        weight: 1
+      - path: Base_Con/Root_Con/wist_Con/Chest_Con/Shoulder_Con_R/Upper_Arm_Con_R/Lower_Arm_Con_R/Hand_Con_R/Hand_IK_Con_R/ikHandle3
+        weight: 1
+      - path: Base_Con/Root_Con/wist_Con/Chest_Con/Shoulder_Con_R/Upper_Arm_Con_R/Lower_Arm_Con_R/Hand_Con_R/Hand_IK_Con_R/Sword_Point_R
+        weight: 1
+      - path: Base_Con/Root_Con/wist_Con/Chest_Con/Shoulder_Con_R/Upper_Arm_Con_R/Lower_Arm_Con_R/Hand_Con_R/Hand_IK_Con_R/Sword_Point_R/Ellipse02
+        weight: 1
+      - path: Base_Con/Root_Con/wist_Con/Chest_Con/Shoulder_Con_R/Upper_Arm_Con_R/Lower_Arm_Con_R/Hand_Con_R/Hand_IK_Con_R/Sword_Point_R/M4A1
+        weight: 1
+      - path: Base_Con/Root_Con/wist_Con/Chest_Con/Shoulder_Con_R/Upper_Arm_Con_R/Lower_Arm_Con_R/Hand_Con_R/Hand_IK_Con_R/Sword_Point_R/ShotGun
+        weight: 1
+      - path: Base_Con/Root_Con/wist_Con/Chest_Con/Shoulder_Con_R/Upper_Arm_Con_R/Lower_Arm_Con_R/Hand_Con_R/Hand_IK_Con_R/Sword_Point_R/ShotGun/Body1
+        weight: 1
+      - path: Base_Con/Root_Con/wist_Con/Chest_Con/Shoulder_Con_R/Upper_Arm_Con_R/Lower_Arm_Con_R/Hand_Con_R/Hand_IK_Con_R/Sword_Point_R/ShotGun/Reload
+        weight: 1
+      - path: Base_Con/Root_Con/wist_Con/Hip_Con
+        weight: 1
+      - path: ManBody
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Hip_L
+        weight: 1
+      - path: Root/Hip_L/Knee_L
+        weight: 1
+      - path: Root/Hip_L/Knee_L/Ankle_L
+        weight: 1
+      - path: Root/Hip_R
+        weight: 1
+      - path: Root/Hip_R/Knee_R
+        weight: 1
+      - path: Root/Hip_R/Knee_R/Ankle_R
+        weight: 1
+      - path: Root/Waist
+        weight: 1
+      - path: Root/Waist/Chest
+        weight: 1
+      - path: Root/Waist/Chest/Clavicle_L
+        weight: 1
+      - path: Root/Waist/Chest/Clavicle_L/Shoulder_L
+        weight: 1
+      - path: Root/Waist/Chest/Clavicle_L/Shoulder_L/Elbow_L
+        weight: 1
+      - path: Root/Waist/Chest/Clavicle_L/Shoulder_L/Elbow_L/Hand_L
+        weight: 1
+      - path: Root/Waist/Chest/Clavicle_R
+        weight: 1
+      - path: Root/Waist/Chest/Clavicle_R/Shoulder_R
+        weight: 1
+      - path: Root/Waist/Chest/Clavicle_R/Shoulder_R/Elbow_R
+        weight: 1
+      - path: Root/Waist/Chest/Clavicle_R/Shoulder_R/Elbow_R/Hand_R
+        weight: 1
+      - path: Root/Waist/Chest/Neck
+        weight: 1
+      - path: Root/Waist/Chest/Neck/Head
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -185,7 +319,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    rootMotionBoneName: 
+    rootMotionBoneName: MovePos
     hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
