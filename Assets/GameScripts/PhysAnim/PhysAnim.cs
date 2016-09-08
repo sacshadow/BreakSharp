@@ -1,17 +1,54 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+public enum MoveState {IDLE, WALK, }
+
 public class PhysAnim : MonoBehaviour {
 	
 	public Rigidbody rBody;
 	
 	public Transform leftFeet, rightFeet;
 	
+	public Feet left, right;
+	
 	public LayerMask mask = ~0;
 	
-	public float walkSpeed = 1.5f;
+	public float walkSpeed = 1.2f;
 	
 	private Vector3 targetVelocity;
+	private MoveState moveState = MoveState.IDLE;
+	
+	
+	private void SetState(MoveState newState) {
+		if(moveState == newState)
+			return;
+		
+		StopAllCoroutines();
+		moveState = newState;
+		if(moveState == MoveState.WALK)
+			StartCoroutine(Walk());
+	}
+	
+	private IEnumerator Walk() {
+	
+		float aleft, aright, move;
+		
+		aleft = GetStartAngle(left.legAngle, right.legAngle);
+		aright = GetStartAngle(right.legAngle, left.legAngle);
+		
+		while(true) {
+			move += Time.deltaTime * walkSpeed;
+			
+			yield return null;
+		}
+	}
+	
+	private float GetStartAngle(float a, float b) {
+		if(a > b)
+			return a;
+		else return a + 60;
+	}
+	
 	
 	// Use this for initialization
 	void Start () {
@@ -28,6 +65,10 @@ public class PhysAnim : MonoBehaviour {
 		
 		rBody.velocity = targetVelocity;
 		
+		if(targetVelocity.z > 0)
+			SetState(MoveState.WALK);
+		else
+			SetState(MoveState.IDLE);
 	}
 	
 	void OnDrawGizmos() {
