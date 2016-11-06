@@ -1,0 +1,1 @@
+(sequence (define a 15) (define b 20) (define a-plus-b (lambda () (+ a b))) (define c 15) (define d a-plus-b) True)
